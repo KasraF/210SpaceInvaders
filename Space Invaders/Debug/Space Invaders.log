@@ -1,0 +1,9 @@
+﻿  GameLoop.cpp
+f:\onedrive\projects\visual studio 2015\2016 spring\semester project\space invaders\gameloop.cpp(97): warning C4018: '<': signed/unsigned mismatch
+f:\onedrive\projects\visual studio 2015\2016 spring\semester project\space invaders\gameloop.cpp(157): warning C4018: '<': signed/unsigned mismatch
+f:\onedrive\projects\visual studio 2015\2016 spring\semester project\space invaders\gameloop.cpp(168): warning C4018: '<': signed/unsigned mismatch
+f:\onedrive\projects\visual studio 2015\2016 spring\semester project\space invaders\gameloop.cpp(171): warning C4018: '<': signed/unsigned mismatch
+f:\onedrive\projects\visual studio 2015\2016 spring\semester project\space invaders\gameloop.cpp(180): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+f:\onedrive\projects\visual studio 2015\2016 spring\semester project\space invaders\gameloop.cpp(192): warning C4018: '<': signed/unsigned mismatch
+f:\onedrive\projects\visual studio 2015\2016 spring\semester project\space invaders\gameloop.cpp(205): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+  Space Invaders.vcxproj -> F:\OneDrive\Projects\Visual Studio 2015\2016 Spring\Semester Project\Debug\Space Invaders.exe

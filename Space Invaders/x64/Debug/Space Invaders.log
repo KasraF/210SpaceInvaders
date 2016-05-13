@@ -1,0 +1,6 @@
+﻿  GameLoop.cpp
+GameLoop.cpp(176): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+GameLoop.cpp(210): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+GameLoop.cpp(221): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+GameLoop.cpp(244): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Space Invaders.vcxproj -> F:\OneDrive\Projects\Visual Studio 2015\2016 Spring\Semester Project\x64\Debug\Space Invaders.exe
