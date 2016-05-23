@@ -1,6 +1,17 @@
-﻿  GameLoop.cpp
-GameLoop.cpp(180): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-GameLoop.cpp(186): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
-GameLoop.cpp(211): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+﻿  Game.cpp
+Game.cpp(70): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+Game.cpp(216): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  GameLoop.cpp
+GameLoop.cpp(176): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+GameLoop.cpp(210): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+GameLoop.cpp(221): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+GameLoop.cpp(244): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Leaderboard.cpp
+Leaderboard.cpp(60): warning C4297: 'Leaderboard::~Leaderboard': function assumed not to throw an exception but does
+  Leaderboard.cpp(60): note: destructor or deallocator has a (possibly implicit) non-throwing exception specification
+Leaderboard.cpp(77): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Main.cpp
+  Generating Code...
+  .NETFramework,Version=v4.0.AssemblyAttributes.cpp
   LINK : /LTCG specified but no code generation required; remove /LTCG from the link command line to improve linker performance
   Space Invaders.vcxproj -> F:\OneDrive\Projects\Visual Studio 2015\2016 Spring\Semester Project\x64\Release\Space Invaders.exe

@@ -1,7 +1,12 @@
 /*
   Name: Kasra Ferdowsifard
   ID: 1475361
-  Date: 05/07/2016
+  Date: 05/17/2016
+
+  NOTE: Windows only.
+  NOTE 2: Needs Common Language Runtime Support (/clr) for compilation.
+          To compile without clr, the 2 Beep() function calls in GameLoop.cpp must
+          be removed.
 */
 
 #include <iostream>
@@ -172,7 +177,7 @@ void GameLoop::processMissiles()
     else if (buffer.at(missiles.at(i).y).at(missiles.at(i).x) == INVADER) {
       killInvader(missiles.at(i).x);
       fireRate+=2;
-      System::Console::Beep(); // Uses windows.h (not portable)
+      System::Console::Beep(); // Uses /clr (not portable)
       score += static_cast<double>(multiplier) / MAX_MULTIPLIER * SCORE_UNIT;
       buffer.at(missiles.at(i).y).at(missiles.at(i).x) = ' ';
       running = !invaders.empty();
@@ -206,7 +211,7 @@ void GameLoop::collisionCheck()
     if (buffer.at(missiles.at(i).y).at(missiles.at(i).x) == INVADER) {
       killInvader(missiles.at(i).x);
       fireRate += 2;
-      System::Console::Beep();
+      System::Console::Beep(); // Uses /clr (not portable)
       score += static_cast<double>(multiplier) / MAX_MULTIPLIER * SCORE_UNIT;
       buffer.at(missiles.at(i).y).at(missiles.at(i).x) = ' ';
       running = !invaders.empty();

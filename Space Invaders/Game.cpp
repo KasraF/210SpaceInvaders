@@ -1,7 +1,12 @@
 /*
   Name: Kasra Ferdowsifard
   ID: 1475361
-  Date: 05/07/2016
+  Date: 05/17/2016
+
+  NOTE: Windows only.
+  NOTE 2: Needs Common Language Runtime Support (/clr) for compilation.
+          To compile without clr, the 2 Beep() function calls in GameLoop.cpp must
+          be removed.
 */
 
 #include <iostream>
@@ -53,7 +58,6 @@ void Game::start()
 //Algorithms for menu(), getScore(),
 //printScores() and credits() should 
 //still work after minor resolution changes.
-//Not tested.
 int Game::menu()
 {
   ifstream file(MENU);

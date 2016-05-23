@@ -1,7 +1,12 @@
 /*
   Name: Kasra Ferdowsifard
   ID: 1475361
-  Date: 05/07/2016
+  Date: 05/17/2016
+
+  NOTE: Windows only.
+  NOTE 2: Needs Common Language Runtime Support (/clr) for compilation.
+          To compile without clr, the 2 Beep() function calls in GameLoop.cpp must
+          be removed.
 */
 
 #include <iostream>
@@ -13,6 +18,9 @@ using namespace std;
 
 #include "Leaderboard.hpp"
 
+//The leaderboard is saved as a CSV file.
+//If the file already exists, the constructer fills
+//the leaderboard with the info
 Leaderboard::Leaderboard(const string& file)
   :filename(file)
 {
@@ -38,9 +46,6 @@ Leaderboard::Leaderboard(const string& file)
 
     loader.close();
   }
-  else {
-    throw;
-  }
 
 }
 
@@ -55,9 +60,6 @@ Leaderboard::~Leaderboard()
       writer << data << endl;
     }
     writer.close();
-  }
-  else {
-    throw;
   }
 }
 
